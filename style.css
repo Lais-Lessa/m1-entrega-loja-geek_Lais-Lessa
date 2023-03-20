@@ -7,12 +7,12 @@ body {
     overflow-x: auto;
 }
 
-.navegacao {
+.navigation {
 
     background-color: #FFFFFF;
 }
 
-.cabecario {
+.header {
 
     display: flex;
     align-items: center;
@@ -21,17 +21,17 @@ body {
     border-bottom: 1px solid rgb(200, 198, 198);
 }
 
-.preco {
+.price{
 
     font-size: 16px;
 }
 
-.titulo_h3 {
+.title_h3 {
 
     font-size: 20px;
 }
 
-.lista {
+.list {
 
     display: flex;
     justify-content: left;
@@ -58,7 +58,7 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.btn {
+button {
 
     background-color: #0A99FE10;
     border-radius: 5px;
@@ -69,7 +69,7 @@ body {
     height: 40px;
 }
 
-.btn:focus {
+button:focus {
 
     background-color: #0A99FE;
     border: 2px solid #0A99FE;
@@ -77,7 +77,7 @@ body {
 
 }
 
-.titulo {
+.title {
 
     color: #868383;
     font-size: 20px;

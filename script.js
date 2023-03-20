@@ -1,35 +1,35 @@
 let itens = [
-    produto1 = {
+    product1 = {
         image: './assets/img/painting/clock.jpg',
         name: 'Smartwatch',
         price: 'R$100,00',
         type: 'Painting'
     },
-    produto2 = {
+    product2 = {
         image: './assets/img/painting/gamepad.jpg',
         name: 'Controle Playstation',
         price: 'R$100,00',
         type: 'Painting'
     },
-    produto3 = {
+    product3 = {
         image: './assets/img/painting/personagem.jpg',
         name: 'Robot',
         price: 'R$100,00',
         type: 'Painting'
     },
-    produto4 = {
+    product4 = {
         image: './assets/img/actions/animewoman.jpg',
         name: 'Anime Woman',
         price: 'R$100,00',
         type: 'Action Figures'
     },
-    produto5 = {
+    product5 = {
         image: './assets/img/actions/dragonballpersonagem.jpg',
         name: 'Goku Super Saiyajin',
         price: 'R$100,00',
         type: 'Action Figures'
     },
-    produto6 = {
+    product6 = {
         image: './assets/img/actions/starwarspersonagem.jpg',
         name: 'Sr Yoda',
         price: 'R$100,00',
@@ -39,8 +39,8 @@ let itens = [
 
 let listFigures = [];
 let listFrames = [];
-const capturaListaDeQuadros = document.querySelector("#quadros")
-const capturaListaDeFiguras = document.querySelector("#figuras")
+const getListFrames = document.querySelector("#frames")
+const getListFigures = document.querySelector("#figures")
 
 function separateItens(array) {
     for (let i = 0; i < array.length; i++) {
@@ -55,42 +55,42 @@ separateItens(itens)
 
 for (let i = 0; i < listFigures.length; i++) {
 
-    let elementoLiFiguras = document.createElement("li");
-    elementoLiFiguras.classList.add("cards");
-    let imagemFiguras = document.createElement("img");
-    imagemFiguras.classList.add("image_cards");
-    let nomeH3Figuras = document.createElement("h3");
-    let paragrafoPrecoFiguras = document.createElement("p");
+    let elementLifigures = document.createElement("li");
+    elementLifigures.classList.add("cards");
+    let imagefigures = document.createElement("img");
+    imagefigures.classList.add("image_cards");
+    let nameH3figures = document.createElement("h3");
+    let paragraphPriceFigures = document.createElement("p");
 
-    imagemFiguras.setAttribute("src", listFigures[i].image);
-    nomeH3Figuras.innerText = `${listFigures[i].name}`;
-    paragrafoPrecoFiguras.innerText = `${listFigures[i].price}`;
+    imagefigures.setAttribute("src", listFigures[i].image);
+    nameH3figures.innerText = `${listFigures[i].name}`;
+    paragraphPriceFigures.innerText = `${listFigures[i].price}`;
 
-    elementoLiFiguras.appendChild(imagemFiguras);
-    elementoLiFiguras.appendChild(nomeH3Figuras);
-    elementoLiFiguras.appendChild(paragrafoPrecoFiguras);
+    elementLifigures.appendChild(imagefigures);
+    elementLifigures.appendChild(nameH3figures);
+    elementLifigures.appendChild(paragraphPriceFigures);
 
-    capturaListaDeFiguras.appendChild(elementoLiFiguras);
+    getListFigures.appendChild(elementLifigures);
 }
 
 for (let i = 0; listFrames.length; i++) {
 
-    let elementoLiQuadros = document.createElement("li");
-    elementoLiQuadros.classList.add("cards");
-    let imagemQuadros = document.createElement("img");
-    imagemQuadros.classList.add("image_cards");
-    let nomeH3Quadros = document.createElement("h3");
-    nomeH3Quadros.classList.add("titulo_h3");
-    let paragrafoPrecoQuadros = document.createElement("p");
-    paragrafoPrecoQuadros.classList.add("preco");
+    let elementLiFrames = document.createElement("li");
+    elementLiFrames.classList.add("cards");
+    let imageFrames = document.createElement("img");
+    imageFrames.classList.add("image_cards");
+    let nomeH3frames = document.createElement("h3");
+    nomeH3frames.classList.add("title_h3");
+    let paragraphPriceFrames = document.createElement("p");
+    paragraphPriceFrames.classList.add("preco");
 
-    imagemQuadros.setAttribute("src", listFrames[i].image);
-    nomeH3Quadros.innerText = `${listFrames[i].name}`;
-    paragrafoPrecoQuadros.innerText = `${listFrames[i].price}`;
+    imageFrames.setAttribute("src", listFrames[i].image);
+    nomeH3frames.innerText = `${listFrames[i].name}`;
+    paragraphPriceFrames.innerText = `${listFrames[i].price}`;
 
-    elementoLiQuadros.appendChild(imagemQuadros);
-    elementoLiQuadros.appendChild(nomeH3Quadros);
-    elementoLiQuadros.appendChild(paragrafoPrecoQuadros);
+    elementLiFrames.appendChild(imageFrames);
+    elementLiFrames.appendChild(nomeH3frames);
+    elementLiFrames.appendChild(paragraphPriceFrames);
 
-    capturaListaDeQuadros.appendChild(elementoLiQuadros);
+    getListFrames.appendChild(elementLiFrames);
 }
